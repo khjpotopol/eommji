@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0,minimum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./login.css">
+
+     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./login.js"></script>
+
+    <title>엄지점빵 로그인</title>
+</head>
+<body>
+    <header>
+        <!--로그인-->
+        <input type="radio" id="login">
+        <input type="radio" id="login_back">
+        <section class="login_section">
+            <div class="login_box">
+                <h2>로그인</h2>
+                <label for="login_back" class="login_back"><i class="fa-solid fa-x fa-2x"></i></label>
+                <hr>
+                <div class="login_inner">
+                    <div class="login_content">
+                        <p>로그인을 하시면 다양한 서비스와 혜택을 받을 수 있습니다.</p>
+                        <div class="login_input">
+                            <div class="id_pw_input">
+                                <input type="text" id="user_id" placeholder="아이디를 입력해주세요.">
+                                <input type="password" id="user_pw" placeholder="비밀번호를 입력해주세요.">
+                            </div>
+                            <button class="btn_login">로그인</button>
+                        </div>
+                        <p class="id_pw_find"><a href="#">아이디 / 비밀번호 찾기</a></p>
+                    </div>
+                    <hr>
+                    <div class="logoin_more">
+                        <p>아직 회원이 아니신가요?</p>
+                        <div><a href="./membership01.html"><span>회원가입</span> 하러가기</a></div>
+                    </div>
+                </div>
+                <!--login_inner-->
+            </div>
+            <!--login_box-->
+        </section>
+        <!--로그인-->
+        <div class="inner">
+            <ul class="gnb">
+                <li><label for="login" class="login">로그인</label></li>
+                <li><a href="./membership01.html">회원가입</a></li>
+                <li>장바구니</li>
+                <li>MY페이지</li>
+            </ul>
+
+            <!--gnb-->
+            <div class="search">
+                <div>
+                    <input type="search" placeholder="상품 검색">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+                <p>인기검색어 &nbsp;&nbsp;&nbsp;#우산 #손수건 #텀블러 #물병 #담요 #볼펜</p>
+            </div>
+            <!--search-->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./main_logo.png" alt="엄지점빵로고">
+                </a>
+            </div>
+            <!--logo-->
+        </div>
+    </header>
+
+    <section class="main">main</section>
+
+</body>
+</html>

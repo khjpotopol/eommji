@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>엄지점빵</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <ul class="gnb">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">MY페이지 </a></li>
+            </ul>
+            <!--gnb-->
+            <div class="search">
+                <div>
+                    <input type="search" placeholder="상품 검색">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+                <p>인기검색어 &nbsp;&nbsp;&nbsp;#우산 #손수건 #텀블러 #물병 #담요 #볼펜</p>
+            </div>
+            <!--search-->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../images/icon/main_logo.png" alt="엄지점빵로고">
+                </a>
+            </div>
+            <!--logo-->
+        </div>
+        <nav>
+            <div class="inner">
+                <ul class="lnb">
+                    <li>
+                        <a href="#">볼펜</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">수첩/노트</a></li>
+                            <li><a href="#">메모/포스트잇</a></li>
+                            <li><a href="#">홀더/화일</a></li>
+                            <li><a href="#">디자인/제도</a></li>
+                            <li><a href="#">사무악세사리</a></li>
+                            <li><a href="#">복사용품/지류</a></li>
+                            <li><a href="#">원목사무기기</a></li>
+                            <li><a href="#">소형사무기기</a></li>
+                            <li><a href="#">기타사무용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">전자기기</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">USB메모리</a></li>
+                            <li><a href="#">보조배터리</a></li>
+                            <li><a href="#">선풍기</a></li>
+                            <li><a href="#">블루투스용품</a></li>
+                            <li><a href="#">가습기/청정기</a></li>
+                            <li><a href="#">컴퓨터용품</a></li>
+                            <li><a href="#">휴대폰용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">생활주방</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">우산</a></li>
+                            <li><a href="#">타월</a></li>
+                            <li><a href="#">텀블러</a></li>
+                            <li><a href="#">머그컵</a></li>
+                            <li><a href="#">티슈/물티슈</a></li>
+                            <li><a href="#">마스크</a></li>
+                            <li><a href="#">응급용품</a></li>
+                            <li><a href="#">위생용품</a></li>
+                            <li><a href="#">공구</a></li>
+                            <li><a href="#">시계</a></li>
+                            <li><a href="#">기타생활</a></li>
+                            <li><a href="#">기타주방</a></li>
+                            <li><a href="#">커피/식음료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">건강/레저</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">골프용품</a></li>
+                            <li><a href="#">여행</a></li>
+                            <li><a href="#">달력</a></li>
+                            <li><a href="#">다이어리</a></li>
+                            <li><a href="#">자동차용품</a></li>
+                            <li><a href="#">업소전용품</a></li>
+                            <li><a href="#">디자인생수</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인쇄물</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">상패/트로피</a></li>
+                            <li><a href="#">상장케이스</a></li>
+                            <li><a href="#">표찰/안내판</a></li>
+                            <li><a href="#">교패</a></li>
+                            <li><a href="#">기타인쇄물</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">계절/의류</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">담요/쿠션</a></li>
+                            <li><a href="#">손난로</a></li>
+                            <li><a href="#">부채</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">지갑</a></li>
+                            <li><a href="#">악세사리</a></li>
+                            <li><a href="#">의류</a></li>
+                            <li><a href="#">단체티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기프티콘</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">BHC</a></li>
+                            <li><a href="#">도미노피자</a></li>
+                            <li><a href="#">네네치킨</a></li>
+                            <li><a href="#">CU편의점</a></li>
+                            <li><a href="#">GS25편의점</a></li>
+                            <li><a href="#">던킨도너츠</a></li>
+                            <li><a href="#">뚜레쥬르</a></li>
+                            <li><a href="#">베스킨라빈스</a></li>
+                            <li><a href="#">이디야커피</a></li>
+                            <li><a href="#">파리바게뜨</a></li>
+                            <li><a href="#">스타벅스</a></li>
+                            <li><a href="#">맥도날드</a></li>
+                            <li><a href="#">미스터피자</a></li>
+                            <li><a href="#">교촌치킨</a></li>
+                            <li><a href="#">공차</a></li>
+                            <li><a href="#">파스쿠찌</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">선물세트</a>
+                    </li>
+                    <li>
+                        <a href="#">제작및 납품사례</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--header-->
+    <div class="wrap">
+        <div class="sub_p_menu inner">
+            <div>
+                <a href="#">사무용품</a> > <a href="#">볼펜</a>
+            </div>
+            <ul>
+                <li><button class="nomal_pen">일반볼펜</button></li>
+                <li><button class="quality_pen">고급볼펜</button></li>
+                <li><button class="touch_pen">터치/기능성</button></li>
+                <li><button class="import_pen">수입볼펜</button></li>
+                <li><button class="color_pen">다색펜</button></li>
+                <li><button class="character_pen">캐릭터볼펜</button></li>
+                <li><button class="printing_pen">컬러인쇄볼펜</button></li>
+                <li><button class="fountain_pen">만년필</button></li>
+                <li><button class="necklace_pen">목걸이/부착펜</button></li>
+                <li><button class="highlighter_pen">형광펜</button></li>
+                <li><button class="sign_pen">사인펜/네임펜</button></li>
+                <li><button class="sharp_pen">연필/샤프/지우개</button></li>
+                <li><button class="ball_pen">볼펜케이스</button></li>
+                <li><button class="waterB_pen">매직/마카/수성펜</button></li>
+                <li><button class="gitSet_pen">선물세트</button></li>
+            </ul>
+        </div>
+        <!--sub_p_menu-->
+        <div class="con01 inner">
+            <h2>BEST</h2>
+            <div class="best">
+                <div class="best_img">
+                    <img src="../images/banner/best_pen01.png" alt="베스트펜01">
+                </div>
+                <div class="best_txt">
+                    <h4>베르사금속펜(럭셔리기프트케이스)</h4>
+                    <div class="txt_bg">
+                        <div>1,748원</div>
+                        <p>고급스러운 검은색 유광바디와 세련된 금색 클립의 조화<br>트위스트타입 / 1.0mm볼팁 검은잉크 사용</p>
+                    </div>
+                </div>
+                <!--best_txt-->
+                <div class="best_icon">
+                    <div class="cart">
+                        <div>
+                            <div class="off"><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
+                            <div class="on">
+                                <i class="fa-solid fa-cart-plus fa-2x"></i>
+                                <p>장바구니</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--cart-->
+                    <div class="gift">
+                        <div class="off"><i class="fa-solid fa-gift fa-7x"></i></div>
+                        <div class="on">선물하기</div>
+                    </div>
+                    <!--gift-->
+                </div>
+                <!--best_icon-->
+            </div>
+            <!--best01-->
+
+            <div class="best">
+                <div class="best_img">
+                    <img src="../images/banner/best_pen02.png" alt="베스트펜02">
+                </div>
+                <div class="best_txt">
+                    <h4>엠보볼펜</h4>
+                    <div class="txt_bg">
+                        <div>161원</div>
+                        <p>네 가지 바디와 네 가지 케이스<br>홍보/판촉용으로 제격인 가성비 펜</p>
+                    </div>
+                </div>
+                <!--best_txt-->
+                <div class="best_icon">
+                    <div class="cart">
+                        <div>
+                            <div class="off"><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
+                            <div class="on">
+                                <i class="fa-solid fa-cart-plus fa-2x"></i>
+                                <p>장바구니</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--cart-->
+                    <div class="gift">
+                        <div class="off"><i class="fa-solid fa-gift fa-7x"></i></div>
+                        <div class="on">선물하기</div>
+                    </div>
+                    <!--gift-->
+                </div>
+                <!--best_icon-->
+            </div>
+            <!--best02-->
+
+            <div class="best">
+                <div class="best_img">
+                    <img src="../images/banner/best_pen03.png" alt="베스트펜03">
+                </div>
+                <div class="best_txt">
+                    <h4>샤크라바(독일잉크)</h4>
+                    <div class="txt_bg">
+                        <div>230원</div>
+                        <p>1.0mm 독일잉크를 탑재한 실크인쇄 고급 볼펜</p>
+                    </div>
+                </div>
+                <!--best_txt-->
+                <div class="best_icon">
+                    <div class="cart">
+                        <div>
+                            <div class="off"><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
+                            <div class="on">
+                                <i class="fa-solid fa-cart-plus fa-2x"></i>
+                                <p>장바구니</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--cart-->
+                    <div class="gift">
+                        <div class="off"><i class="fa-solid fa-gift fa-7x"></i></div>
+                        <div class="on">선물하기</div>
+                    </div>
+                    <!--gift-->
+                </div>
+                <!--best_icon-->
+            </div>
+            <!--best03-->
+        </div>
+        <!--con01_best-->
+        <div class="con02">
+            <div class="promotion inner">
+                <h2>상품 기획전</h2>
+                <ul>
+                    <li><a href="#">
+                        <img src="../images/banner/sub_pro01.jpg" alt="프로모션01">
+                    </a></li>
+                    <li><a href="#">
+                            <img src="../images/banner/sub_pro02.jpg" alt="프로모션02">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../images/banner/sub_pro03.jpg" alt="프로모션03">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../images/banner/sub_pro04.jpg" alt="프로모션04">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--con02_promotion-->
+        <div class="con03 inner">
+            <ul class="order">
+                <li><button class="pen_new">최신등록</button></li>
+                <li><button class="pen_lowP">낮은가격</button></li>
+                <li><button class="pen_highP">높은가격</button></li>
+                <li><button class="pen_best">인기상품</button></li>
+            </ul>
+            <div class="goods">
+                <div>
+                    <img src="../images/goods/pen/01.jpg" alt="pen01">
+                    <p>워터펜블랙+완자문소가죽반지갑</p>
+                    <h4>25,415원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/02.jpg" alt="pen02">
+                    <p>까렌다쉬849메탈샤프</p>
+                    <h4>26,450원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/03.jpg" alt="pen03">
+                    <p>포인트UV니들터치볼펜</p>
+                    <h4>449원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/04.jpg" alt="pen04">
+                    <p>기화펜심세트</p>
+                    <h4>1,093원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/05.jpg" alt="pen05">
+                    <p>M터치펜</p>
+                    <h4>575원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/06.jpg" alt="pen06">
+                    <p>동아필승2컴퓨터싸인펜+스텐다드샤프세트</p>
+                    <h4>604원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/07.jpg" alt="pen07">
+                    <p>몽블랑펜</p>
+                    <h4>2,415원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/08.jpg" alt="pen08">
+                    <p>BT21리틀버디샤프(0.5mm)</p>
+                    <h4>1,840원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/09.jpg" alt="pen09">
+                    <p>헬프맨더블랙메탈볼펜(케이스포함)</p>
+                    <h4>2,070원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/10.jpg" alt="pen10">
+                    <p>[카카오프렌즈] 리틀프렌즈 연필 &amp; 캡 세트(4+4)</p>
+                    <h4>2,542원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/11.jpg" alt="pen11">
+                    <p>아이스크림펜(1.0mm)</p>
+                    <h4>460원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/12.jpg" alt="pen12">
+                    <p>플래티넘프레이져만년필</p>
+                    <h4>11,845원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/13.jpg" alt="pen13">
+                    <p>[루이스코단]타조가죽볼펜+수성펜SET</p>
+                    <h4>47,150원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/14.jpg" alt="pen14">
+                    <p>동아 네임펜1.0mm</p>
+                    <h4>207원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/15.jpg" alt="pen15">
+                    <p>[국산]투명사각H무지개A연필3P세트</p>
+                    <h4>403원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/16.jpg" alt="pen16">
+                    <p>[BIC] 빅 에콜루션 연필(2B)</p>
+                    <h4>242원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/17.jpg" alt="pen17">
+                    <p>4색 책갈피 볼펜</p>
+                    <h4>212원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/18.jpg" alt="pen18">
+                    <p>파스텔 슬림터치볼펜</p>
+                    <h4>315원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/19.jpg" alt="pen19">
+                    <p>연파스텔 고무그립슬림볼펜</p>
+                    <h4>351원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/20.jpg" alt="pen20">
+                    <p>국산 콩나물니들펜0.7mm 2color</p>
+                    <h4>633원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/21.jpg" alt="pen21">
+                    <p>[컬러인쇄]유로3색 화이트3링볼펜(독일잉크)</p>
+                    <h4>224원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/22.jpg" alt="pen22">
+                    <p>유로3색 화이트3링볼펜(독일잉크)</p>
+                    <h4>161원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/91.jpg" alt="pen23">
+                    <p>룩소르알프스412</p>
+                    <h4>8,050원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/24.jpg" alt="pen24">
+                    <p>[루이스코단]로만(미니)볼펜</p>
+                    <h4>9,430원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/25.jpg" alt="pen25">
+                    <p>불투명2색볼펜+델타형광펜세트</p>
+                    <h4>529원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/26.jpg" alt="pen26">
+                    <p>BT21 베이비 중성펜(0.38mm)</p>
+                    <h4>1,173원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/27.jpg" alt="pen27">
+                    <p>(국산)스타사각형광펜5p세트(불투명)</p>
+                    <h4>920원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/28.jpg" alt="pen28">
+                    <p>모던오피스 아이디어 12섹 투턴 듀얼 형광펜 6p 세트</p>
+                    <h4>3,105원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/29.jpg" alt="pen29">
+                    <p>[국산]밀키펫샤프0.5mm</p>
+                    <h4>690원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/30.jpg" alt="pen30">
+                    <p>[국산]멍이펜 11본세트(10color)</p>
+                    <h4>4,600원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/31.jpg" alt="pen31">
+                    <p>포에버 4색볼펜(3색+형광심)</p>
+                    <h4>863원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/32.jpg" alt="pen32">
+                    <p>모던오피스 사각 파스텔 혈광펜 12색 세트 CB305</p>
+                    <h4>7,705원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/33.jpg" alt="pen33">
+                    <p>[BIC]빅 클릭골드 콤비 세트 (2P)</p>
+                    <h4>25,415원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/34.jpg" alt="pen34">
+                    <p>뉴원3색투명</p>
+                    <h4>207원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/35.jpg" alt="pen35">
+                    <p>자바-제트라인3P세트</p>
+                    <h4>1,691원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/36.jpg" alt="pen36">
+                    <p>[제프라]사라사3플러스S</p>
+                    <h4>4,646원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/37.jpg" alt="pen37">
+                    <p>[제프라] 블렌</p>
+                    <h4>1,162원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/38.jpg" alt="pen38">
+                    <p>(국산)세도나 스마트사각네임펜3P세트</p>
+                    <h4>822원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/39.jpg" alt="pen39">
+                    <p>동아 겔스트림0.7mm</p>
+                    <h4>575원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/40.jpg" alt="pen40">
+                    <p>[슈나이더]썬라이트볼펜</p>
+                    <h4>564원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/41.jpg" alt="pen41">
+                    <p>[루이스코단]타조가죽볼펜/수성펜</p>
+                    <h4>17,020원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/42.jpg" alt="pen42">
+                    <p>[루이스코단]마블브라운볼펜/수성펜</p>
+                    <h4>17,250원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/43.jpg" alt="pen43">
+                    <p>ALL UV 레인보우 3색 터치펜</p>
+                    <h4>518원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/44.jpg" alt="pen44">
+                    <p>[주문제작]캐릭터 볼펜(3D-4색 볼펜)</p>
+                    <h4>1,380원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/45.jpg" alt="pen45">
+                    <p>샤넬볼펜</p>
+                    <h4>1,380원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/46.jpg" alt="pen46">
+                    <p>컬러명함케이스(블랙)+갤럭시터치펜 세트</p>
+                    <h4>4,428원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/47.jpg" alt="pen47">
+                    <p>동아오피스연필(BHB)</p>
+                    <h4>207원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/48.jpg" alt="pen48">
+                    <p>룩소르스털링세트416</p>
+                    <h4>9,775원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/49.jpg" alt="pen49">
+                    <p>BT21 리틀버디 4색 볼펜(3색볼펜+형광젤펜)</p>
+                    <h4>2,668원</h4>
+                </div>
+                <div>
+                    <img src="../images/goods/pen/50.jpg" alt="pen50">
+                    <p>BT21 드림 연필캡 7P세트</p>
+                    <h4>1,748원</h4>
+                </div>
+            </div>
+            <!--goods-->
+            <ul class="next_btn">
+                <li><a href="#"><img src="../images/icon/back_arrow02.png" alt="back_arrow02"></a></li>
+                <li><a href="#"><img src="../images/icon/back_arrow01.png" alt="back_arrow01"></a></li>
+                <li>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="../images/icon/next_arrow01.png" alt="next_arrow01"></a></li>
+                <li><a href="#"><img src="../images/icon/next_arrow02.png" alt="next_arrow02"></a></li>
+            </ul>
+            <!--next_btn-->
+        </div>
+        <!--con03-->
+    </div>
+    <!--wrap-->
+    <footer>
+        <div class="inner f_top">
+            <div class="f_top_left">
+                <div class="f_menu">
+                    <ul>
+                        <h4><a href="#">사무용품</a></h4>
+                        <li><a href="#">볼펜 </a></li>
+                        <li><a href="#">수첩/노트 </a></li>
+                        <li><a href="#">메모/포스트잇 </a></li>
+                        <li><a href="#">홀더/화일 </a></li>
+                        <li><a href="#">디자인/제도 </a></li>
+                        <li><a href="#">사무악세사리 </a></li>
+                        <li><a href="#">복사용품/지류 </a></li>
+                        <li><a href="#">원목 사무용품 </a></li>
+                        <li><a href="#">소형 사무기기 </a></li>
+                        <li><a href="#">기타 사무용품 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">전자기기</a></h4>
+                        <li><a href="#">USB메모리 </a></li>
+                        <li><a href="#">보조배터리 </a></li>
+                        <li><a href="#">선풍기 </a></li>
+                        <li><a href="#">블루투스용품 </a></li>
+                        <li><a href="#">가습기/청정기 </a></li>
+                        <li><a href="#">컴퓨터용품 </a></li>
+                        <li><a href="#">휴대폰용품 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">생활/주방</a></h4>
+                        <li><a href="#">우산 </a></li>
+                        <li><a href="#">타월 </a></li>
+                        <li><a href="#">텀블러 </a></li>
+                        <li><a href="#">머그컵 </a></li>
+                        <li><a href="#">티슈/물티슈 </a></li>
+                        <li><a href="#">마스크 </a></li>
+                        <li><a href="#">응급용품 </a></li>
+                        <li><a href="#">위생용품 </a></li>
+                        <li><a href="#">공구 </a></li>
+                        <li><a href="#">시계 </a></li>
+                        <li><a href="#">기타생활 </a></li>
+                        <li><a href="#">기타주방 </a></li>
+                        <li><a href="#">커피/식음료 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">건강/레저</a></h4>
+                        <li><a href="#">골프용품 </a></li>
+                        <li><a href="#">여행 </a></li>
+                        <li><a href="#">달력 </a></li>
+                        <li><a href="#">다이어리 </a></li>
+                        <li><a href="#">자동차용품 </a></li>
+                        <li><a href="#">업소전용품 </a></li>
+                        <li><a href="#">디자인 생수 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">인쇄물</a></h4>
+                        <li><a href="#">상패/트로피 </a></li>
+                        <li><a href="#">상장케이스 </a></li>
+                        <li><a href="#">표찰/안내판 </a></li>
+                        <li><a href="#">교패 </a></li>
+                        <li><a href="#">기타인쇄물 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">계절/의류</a></h4>
+                        <li><a href="#">담요/쿠션 </a></li>
+                        <li><a href="#">손난로 </a></li>
+                        <li><a href="#">부채 </a></li>
+                        <li><a href="#">가방 </a></li>
+                        <li><a href="#">지갑 </a></li>
+                        <li><a href="#">악세사리 </a></li>
+                        <li><a href="#">의류 </a></li>
+                        <li><a href="#">단체티 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">기프티콘</a></h4>
+                        <li><a href="#">BHC </a></li>
+                        <li><a href="#">도미노피자 </a></li>
+                        <li><a href="#">네네치킨 </a></li>
+                        <li><a href="#">CU편의점 </a></li>
+                        <li><a href="#">GS25편의점 </a></li>
+                        <li><a href="#">사무악세사리 </a></li>
+                        <li><a href="#">복사용품/지류 </a></li>
+                        <li><a href="#">원목 사무용품 </a></li>
+                        <li><a href="#">소형 사무기기 </a></li>
+                        <li><a href="#">기타 사무용품 </a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4><a href="#">선물세트 </a></h4>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4><a href="#">제작 및 납품 사례</a></h4>
+                        </li>
+                    </ul>
+                </div>
+                <!--f_menu-->
+                <div class="f_advice">
+                    <div class="f_sns">
+                        <h4>고객상담</h4>
+                        <div class="kakao"><a href="#"><img src="../images/icon/kakao_icon.png" alt="카카오톡"></a></div>
+                        <div><a href="#"><img src="../images/icon/insta_icon.png" alt="인스타그램"></a></div>
+                        <div><a href="#"><img src="../images/icon/naver_form.png" alt="네이버폼"></a></div>
+                    </div>
+                    <div class="f_ad_rihgt">
+                        <div>
+                            <a href="#">
+                                <h4>자주 묻는 질문</h4>
+                                <div><i class="fa-solid fa-question fa-3x"></i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h4>QnA</h4>
+                                <div><i class="fa-solid fa-comments fa-3x"></i></i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h4>공지사항</h4>
+                                <div><i class="fa-regular fa-bell fa-3x"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--f_top_left-->
+            <div class="f_top_right">
+                <div class="f_bank">
+                    <h4>입금계좌</h4>
+                    <div class="f_bank_nhb">
+                        <div>
+                            <img src="../images/icon/NHB_icon.png" alt="농협로고">
+                        </div>
+                        <div class="f_bank_info">
+                            <p>0108352071108</p>
+                            <p>예금주 : 엄준화</p>
+                        </div>
+                    </div>
+                    <div class="f_bank_bnk">
+                        <div>
+                            <img src="../images/icon/bnk_icon.png" alt="농협로고">
+                        </div>
+                        <div class="f_bank_info">
+                            <p>1122101125402</p>
+                            <p>예금주 : 엄준화</p>
+                        </div>
+                    </div>
+                </div>
+                <!--f_bank-->
+                <div class="f_top_right_advice">
+                    <h4>고객상담센터</h4>
+                    <div>
+                        <div class="f_advice_top">
+                            <div class="f_advice_icon">
+                                <i class="fa-solid fa-headset fa-3x"></i>
+                            </div>
+                            <div class="f_advice_num">
+                                <p>053-201-0311</p>
+                                <p>010-9911-0311</p>
+                            </div>
+                        </div>
+                        <div class="f_advice_bottom">
+                            <div><span>FAX : </span>053-351-0409</div>
+                            <div><span>E-Mail : </span>junchi0311@naver.com</div>
+                            <hr>
+                            <p>업무시간 : AM06:00 ~ PM19:00</p>
+                            <p>점심시간 : PM12:00 ~ PM13:00</p>
+                            <h6>업무시간 외에도 <span>전화, 카카오톡</span>상담은 가능합니다.</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--f_top_right_advice-->
+            </div>
+            <!--f_top_right-->
+        </div>
+        <!--f_top-->
+        <nav>
+            <ul class="inner f_mid_lnb">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">1:1상담문의</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">입점문의</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+            </ul>
+        </nav>
+        <!--f_mid_lnb-->
+        <div class="f_bottom inner">
+            <div class="f_bottom_left">
+                <ul>
+                    <li>엄지점빵 대표자 : 엄준화 대구 달서구 달서대로475 5층 엄지점빵</li>
+                    <li>대구 서구 서대구로87, 4층 엄지점빵</li>
+                    <li>사업자등록번호 : 523-02-01184 통신판매업신고 : 2020-대구수성구-0197</li>
+                    <li>고객센터 : 053-201-0311 010-9911-0311 FAX : 엄지점빵 Email : junchi0311@naver.com</li>
+                    <li>개인정보보호책임자 : 엄준화 (junchi0311@naver.com)</li>
+                </ul>
+                <p>엄지점빵의 사전 서면 동의 없이 사이트의 일체의 정보, 콘텐츠 및 UI등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다. Copyright ⓒ 엄지점빵 All
+                    rights reserved.</p>
+            </div>
+            <div class="f_bottom_mid">
+                <img src="../images/icon/main_logo.png  " alt="엄지점빵로고 ">
+            </div>
+            <div class="f_bottom_right">
+                <p>에스크로 구매안전서비스</p>
+                <p>고객님은 안전거래를 위해 현금으로 5만원이상 결제시 구매자가 보호를
+                    받을 수 있는 구매안전서비스(에스크로)를 이용하실 수 있습니다.</p>
+                <p>보상대상 : 미배송, 반품/환불거부, 쇼핑몰부도</p>
+                <h5><a href="#">서비스가입사실 확인 > </a></h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/*회원가입창*/
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+/*@media all and (max-width:479px) {}*/
+
+*{
+    margin: 0; padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li{list-style: none;}
+
+
+
+html{
+    font-size: 12px;
+}
+
+body {
+    width: 100%;
+}
+.wrap{
+    padding: 0 1rem;
+}
+summary{outline: none;}
+
+
+.member_tit{
+    margin: 3rem 0 1rem;
+}
+.member_tit p{color: #666;}
+
+.member_tit h2{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+/*페이지별 색 표시*/
+.member_tit_01 .member_step01,
+.member_tit_01 .member_step01 p,
+.member_tit_02 .member_step01,
+.member_tit_02 .member_step01 p,
+.member_tit_03 .member_step01,
+.member_tit_03 .member_step01 p
+{color: #FA6900;}
+/*페이지별 색 표시*/
+
+.member_step{
+    overflow: hidden;
+    text-align: center;
+}
+.member_step>div{
+    height: 100%; width: 25%;
+    float: left;
+}
+.member_step .angles_right{
+    width: 12.5%;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+
+
+.member_checklist h3{
+    background-color: #ddd;
+    padding: 1rem;
+}
+details>summary::marker {font-size: 0;}
+details summary h3::after{
+    content: ""; display: inline-block;
+    width: 1.2rem; height: 0.6rem;
+    background: url(../images/icon/more_B_btn.png) no-repeat;
+    background-size: contain;
+    margin-left: 1rem;
+}
+details[open] summary h3::after{
+    transform: scale(-100%);
+}
+details p{
+    height: 20rem;
+    padding: 1rem;
+    overflow: scroll;
+    background-color: #f9f9f9;
+}
+
+.next_page{
+    width: 15rem; height: 5rem;
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    background-color: #FFC68E;
+    margin: 3rem auto;
+}
+.next_page a{
+    font-size: 1rem;
+}
+
+.member_checklist_02{
+    margin: 2rem 0;
+    color: #FA6900;
+}
+.terms_el{
+    cursor: pointer;
+    display: block;
+   margin: 2rem 0;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+.member_checklist_03{margin-top: 8rem;}
+
+
+/*01*/
+
+.member_form{
+    font-size: 1.4rem;
+}
+
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    html{font-size: 14px;}
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+    html{font-size: 16px;}
+}
+
+/*와이드*/
+@media all and (min-width:1350px) {
+    html{font-size: 18px;}
+}
