@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./login/login.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    
+        
+
+    <title>엄지점빵</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <ul class="gnb">
+                <li>로그인
+                    <!--로그인-->
+                    <input type="radio" id="login">
+                    <input type="radio" id="login_back">
+                    <section class="login_section">
+                        <div class="login_box">
+                            <h2>로그인</h2>
+                            <label for="login_back" class="login_back"><i class="fa-solid fa-x fa-2x"></i></label>
+                            <hr>
+                            <div class="login_inner">
+                                <div class="login_content">
+                                    <p>로그인을 하시면 다양한 서비스와 혜택을 받을 수 있습니다.</p>
+                                    <div class="login_input">
+                                        <div class="id_pw_input">
+                                            <input type="text" id="user_id" placeholder="아이디를 입력해주세요.">
+                                            <input type="password" id="user_pw" placeholder="비밀번호를 입력해주세요.">
+                                        </div>
+                                        <button class="btn_login">로그인</button>
+                                    </div>
+                                    <p class="id_pw_find"><a href="#">아이디 / 비밀번호 찾기</a></p>
+                                </div>
+                                <hr>
+                                <div class="logoin_more">
+                                    <p>아직 회원이 아니신가요?</p>
+                                    <div><a href="./membership01.html"><span>회원가입</span> 하러가기</a></div>
+                                </div>
+                            </div>
+                            <!--login_inner-->
+                        </div>
+                        <!--login_box-->
+                    </section>
+                    <!--로그인-->
+                </li>
+                <li>
+                    <a href="./login/membership01.html">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">MY페이지 </a></li>
+            </ul>
+            <!--gnb-->
+            <div class="search">
+                <div>
+                    <input type="search" placeholder="상품 검색">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+                <p>인기검색어 &nbsp;&nbsp;&nbsp;#우산 #손수건 #텀블러 #물병 #담요 #볼펜</p>
+            </div>
+            <!--search-->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/icon/main_logo.png" alt="엄지점빵로고">
+                </a>
+            </div>
+            <!--logo-->  
+        </div>
+        <nav>
+            <div class="inner">
+                <ul class="lnb">
+                    <li>
+                        <a href="./sub_index.html">볼펜</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">수첩/노트</a></li>
+                            <li><a href="#">메모/포스트잇</a></li>
+                            <li><a href="#">홀더/화일</a></li>
+                            <li><a href="#">디자인/제도</a></li>
+                            <li><a href="#">사무악세사리</a></li>
+                            <li><a href="#">복사용품/지류</a></li>
+                            <li><a href="#">원목사무기기</a></li>
+                            <li><a href="#">소형사무기기</a></li>
+                            <li><a href="#">기타사무용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">전자기기</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">USB메모리</a></li>
+                            <li><a href="#">보조배터리</a></li>
+                            <li><a href="#">선풍기</a></li>
+                            <li><a href="#">블루투스용품</a></li>
+                            <li><a href="#">가습기/청정기</a></li>
+                            <li><a href="#">컴퓨터용품</a></li>
+                            <li><a href="#">휴대폰용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">생활주방</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">우산</a></li>
+                            <li><a href="#">타월</a></li>
+                            <li><a href="#">텀블러</a></li>
+                            <li><a href="#">머그컵</a></li>
+                            <li><a href="#">티슈/물티슈</a></li>
+                            <li><a href="#">마스크</a></li>
+                            <li><a href="#">응급용품</a></li>
+                            <li><a href="#">위생용품</a></li>
+                            <li><a href="#">공구</a></li>
+                            <li><a href="#">시계</a></li>
+                            <li><a href="#">기타생활</a></li>
+                            <li><a href="#">기타주방</a></li>
+                            <li><a href="#">커피/식음료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">건강/레저</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">골프용품</a></li>
+                            <li><a href="#">여행</a></li>
+                            <li><a href="#">달력</a></li>
+                            <li><a href="#">다이어리</a></li>
+                            <li><a href="#">자동차용품</a></li>
+                            <li><a href="#">업소전용품</a></li>
+                            <li><a href="#">디자인생수</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">인쇄물</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">상패/트로피</a></li>
+                            <li><a href="#">상장케이스</a></li>
+                            <li><a href="#">표찰/안내판</a></li>
+                            <li><a href="#">교패</a></li>
+                            <li><a href="#">기타인쇄물</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">계절/의류</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">담요/쿠션</a></li>
+                            <li><a href="#">손난로</a></li>
+                            <li><a href="#">부채</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">지갑</a></li>
+                            <li><a href="#">악세사리</a></li>
+                            <li><a href="#">의류</a></li>
+                            <li><a href="#">단체티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">기프티콘</a>
+                        <ul class="sub_lnb">
+                            <li><a href="#">BHC</a></li>
+                            <li><a href="#">도미노피자</a></li>
+                            <li><a href="#">네네치킨</a></li>
+                            <li><a href="#">CU편의점</a></li>
+                            <li><a href="#">GS25편의점</a></li>
+                            <li><a href="#">던킨도너츠</a></li>
+                            <li><a href="#">뚜레쥬르</a></li>
+                            <li><a href="#">베스킨라빈스</a></li>
+                            <li><a href="#">이디야커피</a></li>
+                            <li><a href="#">파리바게뜨</a></li>
+                            <li><a href="#">스타벅스</a></li>
+                            <li><a href="#">맥도날드</a></li>
+                            <li><a href="#">미스터피자</a></li>
+                            <li><a href="#">교촌치킨</a></li>
+                            <li><a href="#">공차</a></li>
+                            <li><a href="#">파스쿠찌</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">선물세트</a>
+                    </li>
+                    <li>
+                        <a href="./sub_index.html">제작및 납품사례</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--lnb-->
+    </header>
+    <!--header-->
+    <div class="wrap">
+        <section class="main">
+            <div class="main_visual swiper mySwiper">
+                <ul class="swiper-wrapper">
+                    <li class="main01 swiper-slide">
+                        <img src="./images/banner/main_V01.jpg" alt="메인비주얼01">
+                    </li>
+                    <li class="main02 swiper-slide">
+                        <img src="./images/banner/main_V02.jpg" alt="메인비주얼02">
+                    </li>
+                    <li class="main03 swiper-slide">
+                        <img src="./images/banner/main_V03.jpg" alt="메인비주얼03">
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </section>
+        <!--main_visual--> 
+        <section class="customized">
+            <div class="inner">
+                <div class="custom_left">
+                    <h2>맞춤 제품 추천</h2>
+                    <input type="radio" name="customized" id="user" checked>
+                    <input type="radio" name="customized" id="event">
+                    <input type="radio" name="customized" id="business">
+                    <input type="radio" name="customized" id="money">
+                    <ul>
+                        <li><label for="user"><img src="./images/icon/group.png" alt="대상별"><p>대상별</p></label></li>
+                        <li><label for="event"><img src="./images/icon/event.png" alt="행사별"><p>행사별</p></label></li>
+                        <li><label for="business"><img src="./images/icon/business_center_b.png" alt="업종별"><p>업종별</p></label></li>
+                        <li><label for="money"><img src="./images/icon/hand.png" alt="가격대별"><p>가격대별</p></label></li>
+                    </ul>
+                </div>
+                <div class="custom_right">
+                    <div class="custom_right_box">
+                        <h3><span>어느 분께 드릴</span> 선물인가요?</h3>
+                        <ul>
+                            <li class="custom_user">
+                                <div>
+                                    <i class="fa-solid fa-chevron-down fa-lg"></i>
+                                    <select name="" id="">
+                                        <option value="">직장인 남성</option>
+                                        <option value="">직장인 여성</option>
+                                        <option value="">주부</option>
+                                        <option value="">대학생</option>
+                                        <option value="">청소년(중고등)</option>
+                                        <option value="">어린이(유아/초등)</option>
+                                        <option value="">VIP/중장년층</option>
+                                        <option value="">실버제품</option>
+                                        <option value="">외국인/관광객</option>
+                                    </select>
+                                    
+                                </div>
+                                <span>께 어울리는</span>
+                            </li>
+                            <li class="custom_event">
+                                <div>
+                                    <i class="fa-solid fa-chevron-down fa-lg"></i>
+                                    <select name="" id="">
+                                        <option value="">개인판촉물</option>
+                                        <option value="">근로자의 날</option>
+                                        <option value="">VIP&#47;주주총회</option>
+                                        <option value="">야유회&#47;체육대회</option>
+                                        <option value="">창립기념품</option>
+                                        <option value="">세미나&#47;워크샵</option>
+                                        <option value="">스승의날&#47;어버이날</option>
+                                        <option value="">돌답례품</option>
+                                        <option value="">결혼답례품</option>
+                                        <option value="">환갑&#47;고희답례품</option>
+                                        <option value="">관공서판촉물</option>
+                                        <option value="">모델하우스판촉물</option>
+                                        <option value="">전도용품</option>
+                                        <option value="">어린이판촉물</option>
+                                        <option value="">아이디어판촉물</option>
+                                        <option value="">친목모임&#47;동창회</option>
+                                        <option value="">박람회&#47;설명회</option>
+                                        <option value="">졸업&#47;입학선물</option>
+                                        <option value="">명절선물세트</option>
+                                    </select>
+                                    
+                                </div>
+                                <span>에 어울리는</span>
+                            </li>
+                            <li class="custom_business">
+                                <div>
+                                    <i class="fa-solid fa-chevron-down fa-lg"></i>
+                                    <select name="" id="">
+                                        <option value="">관공서&#47;협회&#47;단체</option>
+                                        <option value="">학교&#47;학원&#47;교육</option>
+                                        <option value="">보험&#47;금융기관</option>
+                                        <option value="">건설분양&#47;부동산</option>
+                                        <option value="">병원&#47;약국&#47;웰빙</option>
+                                        <option value="">종교단체</option>
+                                        <option value="">자동차관련/주유소</option>
+                                        <option value="">IT&#47;핸드폰매장</option>
+                                        <option value="">프랜차이즈&#47;요식업</option>
+                                        <option value="">법률&#47;세무회계</option>
+                                        <option value="">여행레저&#47;스포츠</option>
+                                        <option value="">쇼핑몰&#47;매장</option>
+                                        <option value="">일반기업&#47;사무실</option>
+                                    </select>
+                                    
+                                    <span>에서 좋아할만한</span>
+                                </div>
+                            </li>
+                            <li class="custom_money">
+                                <div>
+                                    <i class="fa-solid fa-chevron-down fa-lg"></i>
+                                    <select name="" id="">
+                                        <option value="">100원 미만</option>
+                                        <option value="">100원 &sim; 200원 미만</option>
+                                        <option value="">200원 &sim; 300원 미만</option>
+                                        <option value="">300원 &sim; 500원 미만</option>
+                                        <option value="">500원 &sim; 1,000원 미만</option>
+                                        <option value="">1,000원 &sim; 3,000원 미만</option>
+                                        <option value="">3,000원 &sim; 5,000원 미만</option>
+                                        <option value="">5,000원 &sim; 10,000원 미만</option>
+                                        <option value="">10,000원 &sim; 20,000원 미만</option>
+                                        <option value="">20,000원 &sim; 50,000원 미만</option>
+                                        <option value="">50,000원 초과</option>
+                                    </select>
+                                    
+                                    <span>인 상품</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button>추천받기 <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--customized-->
+
+        <section class="con01">
+            <div class="inner">
+                <h2>BEST</h2>
+                <div class="best">
+                    <div>
+                        <img src="./images/main_best/01.jpg" alt="best상품01">
+                        <div class="best_txt">블루투스 용품</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/02.jpg" alt="best상품02">
+                        <div class="best_txt">카드지갑</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/03.jpg" alt="best상품03">
+                        <div class="best_txt">에코백</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/04.jpg" alt="best상품04">
+                        <div class="best_txt">우산기획전</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/05.jpg" alt="best상품05">
+                        <div class="best_txt">자동차용품</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/06.jpg" alt="best상품06">
+                        <div class="best_txt">전통상품</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/07.jpg" alt="best상품07">
+                        <div class="best_txt">머그컵</div>
+                    </div>
+                    <div>
+                        <img src="./images/main_best/08.jpg" alt="best상품08">
+                        <div class="best_txt">핫팩</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--best-->
+        <section class="con02">
+            <h2 class="inner">BRAND CHOICE</h2>
+            <div>
+                <div class="brand_arrow">
+                    <i class="fa-solid fa-square-caret-left"></i>
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </div>
+                <ul class="brand">
+                    <li><a href="#"><img src="./images/brand/b01.jpg" alt="brand01"></a></li>
+                    <li><a href="#"><img src="./images/brand/b02.jpg" alt="brand02"></a></li>
+                    <li><a href="#"><img src="./images/brand/b03.jpg" alt="brand03"></a></li>
+                    <li><a href="#"><img src="./images/brand/b04.jpg" alt="brand04"></a></li>
+                    <li><a href="#"><img src="./images/brand/b05.jpg" alt="brand05"></a></li>
+                    <li><a href="#"><img src="./images/brand/b06.jpg" alt="brand06"></a></li>
+                    <li><a href="#"><img src="./images/brand/b07.jpg" alt="brand07"></a></li>
+                    <li><a href="#"><img src="./images/brand/b09.jpg" alt="brand08"></a></li>
+                    <li><a href="#"><img src="./images/brand/b10.jpg" alt="brand09"></a></li>
+                    <li><a href="#"><img src="./images/brand/b11.jpg" alt="brand10"></a></li>
+                    <li><a href="#"><img src="./images/brand/b12.jpg" alt="brand11"></a></li>
+                    <li><a href="#"><img src="./images/brand/b13.jpg" alt="brand12"></a></li>
+                    <li><a href="#"><img src="./images/brand/b14.jpg" alt="brand13"></a></li>
+                    <li><a href="#"><img src="./images/brand/b15.png" alt="brand14"></a></li>
+                    <li><a href="#"><img src="./images/brand/b16.jpg" alt="brand15"></a></li>
+                    <li><a href="#"><img src="./images/brand/b17.jpg" alt="brand16"></a></li>
+                    <li><a href="#"><img src="./images/brand/b18.jpg" alt="brand17"></a></li>
+                    <li><a href="#"><img src="./images/brand/b19.jpg" alt="brand18"></a></li>
+                    <li><a href="#"><img src="./images/brand/b20.jpg" alt="brand19"></a></li>
+                    <li><a href="#"><img src="./images/brand/b21.jpg" alt="brand20"></a></li>
+                    <li><a href="#"><img src="./images/brand/b22.jpg" alt="brand21"></a></li>
+                    <li><a href="#"><img src="./images/brand/b23.jpg" alt="brand22"></a></li>
+                    <li><a href="#"><img src="./images/brand/b24.jpg" alt="brand23"></a></li>
+                    <li><a href="#"><img src="./images/brand/b25.jpg" alt="brand24"></a></li>
+                    <li><a href="#"><img src="./images/brand/b26.jpg" alt="brand25"></a></li>
+                    <li><a href="#"><img src="./images/brand/b27.jpg" alt="brand26"></a></li>
+                    <li><a href="#"><img src="./images/brand/b28.jpg" alt="brand27"></a></li>
+                    <li><a href="#"><img src="./images/brand/b29.jpg" alt="brand28"></a></li>
+                    <li><a href="#"><img src="./images/brand/b30.jpg" alt="brand29"></a></li>
+                    <li><a href="#"><img src="./images/brand/b31.jpg" alt="brand30"></a></li>
+                    <li><a href="#"><img src="./images/brand/b32.jpg" alt="brand31"></a></li>
+                    <li><a href="#"><img src="./images/brand/b33.jpg" alt="brand32"></a></li>
+                    <li><a href="#"><img src="./images/brand/b34.jpg" alt="brand33"></a></li>
+                    <li><a href="#"><img src="./images/brand/b35.jpg" alt="brand34"></a></li>
+                    <li><a href="#"><img src="./images/brand/b36.jpg" alt="brand35"></a></li>
+                    <li><a href="#"><img src="./images/brand/b37.jpg" alt="brand36"></a></li>
+                    <li><a href="#"><img src="./images/brand/b38.jpg" alt="brand37"></a></li>
+                    <li><a href="#"><img src="./images/brand/b39.jpg" alt="brand38"></a></li>
+                    <li><a href="#"><img src="./images/brand/b40.jpg" alt="brand39"></a></li>
+                    <li><a href="#"><img src="./images/brand/b41.jpg" alt="brand40"></a></li>
+                    <li><a href="#"><img src="./images/brand/b42.jpg" alt="brand41"></a></li>
+                    <li><a href="#"><img src="./images/brand/b43.jpg" alt="brand42"></a></li>
+                    <li><a href="#"><img src="./images/brand/b44.jpg" alt="brand43"></a></li>
+                    <li><a href="#"><img src="./images/brand/b45.png" alt="brand44"></a></li>
+                    <li><a href="#"><img src="./images/brand/b46.jpg" alt="brand45"></a></li>
+                    <li><a href="#"><img src="./images/brand/b47.png" alt="brand46"></a></li>
+                    <li><a href="#"><img src="./images/brand/b48.jpg" alt="brand47"></a></li>
+                    <li><a href="#"><img src="./images/brand/b49.png" alt="brand48"></a></li>
+                    <li><a href="#"><img src="./images/brand/b50.png" alt="brand49"></a></li>
+                    <li><a href="#"><img src="./images/brand/b51.jpg" alt="brand50"></a></li>
+                    <li><a href="#"><img src="./images/brand/b52.jpg" alt="brand51"></a></li>
+                    <li><a href="#"><img src="./images/brand/b53.jpg" alt="brand52"></a></li>
+                    <li><a href="#"><img src="./images/brand/b54.png" alt="brand53"></a></li>
+                    <li><a href="#"><img src="./images/brand/b55.jpg" alt="brand54"></a></li>
+                    <li><a href="#"><img src="./images/brand/b56.png" alt="brand55"></a></li>
+                    <li><a href="#"><img src="./images/brand/b57.jpg" alt="brand56"></a></li>
+                    <li><a href="#"><img src="./images/brand/b58.jpg" alt="brand57"></a></li>
+                    <li><a href="#"><img src="./images/brand/b59.jpg" alt="brand58"></a></li>
+                    <li><a href="#"><img src="./images/brand/b60.jpg" alt="brand59"></a></li>
+                    <li><a href="#"><img src="./images/brand/b61.jpg" alt="brand60"></a></li>
+                    <li><a href="#"><img src="./images/brand/b62.jpg" alt="brand61"></a></li>
+                    <li><a href="#"><img src="./images/brand/b63.jpg" alt="brand62"></a></li>
+                    <li><a href="#"><img src="./images/brand/b64.jpg" alt="brand63"></a></li>
+                    <li><a href="#"><img src="./images/brand/b65.png" alt="brand64"></a></li>
+                    <li><a href="#"><img src="./images/brand/b66.png" alt="brand65"></a></li>
+                    <li><a href="#"><img src="./images/brand/b67.jpg" alt="brand66"></a></li>
+                    <li><a href="#"><img src="./images/brand/b68.png" alt="brand67"></a></li>
+                    <li><a href="#"><img src="./images/brand/b69.jpg" alt="brand68"></a></li>
+                    <li><a href="#"><img src="./images/brand/b70.png" alt="brand69"></a></li>
+                    <li><a href="#"><img src="./images/brand/b71.jpg" alt="brand70"></a></li>
+                    <li><a href="#"><img src="./images/brand/b72.jpg" alt="brand71"></a></li>
+                    <li><a href="#"><img src="./images/brand/b73.png" alt="brand72"></a></li>
+                    <li><a href="#"><img src="./images/brand/b74.jpg" alt="brand73"></a></li>
+                    <li><a href="#"><img src="./images/brand/b75.jpg" alt="brand74"></a></li>
+                    <li><a href="#"><img src="./images/brand/b76.jpg" alt="brand75"></a></li>
+                    <li><a href="#"><img src="./images/brand/b77.png" alt="brand76"></a></li>
+                    <li><a href="#"><img src="./images/brand/b78.png" alt="brand77"></a></li>
+                    <li><a href="#"><img src="./images/brand/b79.png" alt="brand78"></a></li>
+                    <li><a href="#"><img src="./images/brand/b80.jpg" alt="brand79"></a></li>
+                    <li><a href="#"><img src="./images/brand/b81.jpg" alt="brand80"></a></li>
+                    <li><a href="#"><img src="./images/brand/b82.jpg" alt="brand81"></a></li>
+                    <li><a href="#"><img src="./images/brand/b83.png" alt="brand82"></a></li>
+                    <li><a href="#"><img src="./images/brand/b84.jpg" alt="brand83"></a></li>
+                    <li><a href="#"><img src="./images/brand/b85.jpg" alt="brand84"></a></li>
+                    <li><a href="#"><img src="./images/brand/b86.jpg" alt="brand85"></a></li>
+                    <li><a href="#"><img src="./images/brand/b87.jpg" alt="brand86"></a></li>
+                    <li><a href="#"><img src="./images/brand/b88.png" alt="brand87"></a></li>
+                    <li><a href="#"><img src="./images/brand/b89.jpg" alt="brand88"></a></li>
+                </ul>
+            </div>
+        </section>
+        <!--brand-->
+        <section class="con03 inner">
+            <h2>제작 및 납품사례</h2>
+            <div class="example">
+                <div class="ex01">
+                    <div class="ex_img_t">
+                        <a href="#">
+                            <img src="./images/example/43.jpg" alt="텀블러">
+                            <div class="ex_txt">
+                                <h3>스튜디오인 텀블러 600ml</h3>
+                                <p>3,393원</p>
+                                <p>무광재질의 바디코팅, 대용량 사이즈<br>실크스크린을 이용한 맞춤인쇄</p>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="ex_img_b">
+                        <li><a href="#"><img src="./images/main_ex/1_1.jpg" alt="텀블러1-1"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/1_2.jpg" alt="텀블러1-2"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/1_3.jpg" alt="텀블러1-3"></a></li>
+                    </ul>
+                </div>
+                <!--ex01-->
+                <div class="ex02">
+                    <div class="ex_img_t">
+                        <a href="#">
+                            <img src="./images/example/41.jpg" alt="손거울">
+                            <div class="ex_txt">
+                                <h3>대구카일라헤어 손거울</h3>
+                                <p>920원</p>
+                                <p>다양한 색상과 디자인<br>실크인쇄 & 풀컬러 디지털인쇄</p>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="ex_img_b">
+                        <li><a href="#"><img src="./images/main_ex/2_1.jpg" alt="손거울2-1"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/2_2.jpg" alt="손거울2-2"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/2_3.jpg" alt="손거울2-3"></a></li>
+                    </ul>
+                </div>
+                <!--ex02-->
+                <div class="ex03">
+                    <div class="ex_img_t">
+                        <a href="#">
+                            <img src="./images/example/45.jpg" alt="소주잔">
+                            <div class="ex_txt">
+                                <h3>호시탐탐 소주잔</h3>
+                                <p>805원</p>
+                                <p>탁월한 내구성과 안정감 있는 천연유리소재<br>실크인쇄 & 전사인쇄</p>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="ex_img_b">
+                        <li><a href="#"><img src="./images/main_ex/3_1.jpg" alt="소주잔3-1"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/3_2.jpg" alt="소주잔3-2"></a></li>
+                        <li><a href="#"><img src="./images/main_ex/3_3.jpg" alt="소주잔3-3"></a></li>
+                    </ul>
+                </div>
+                <!--ex03-->
+            </div>
+        </section>
+        <!--example-->
+    </div>
+    <!--wrap-->
+    <footer>
+        <div class="inner f_top">
+            <div class="f_top_left">
+                <div class="f_menu">
+                    <ul>
+                        <h4><a href="#">사무용품</a></h4>
+                        <li><a href="#">볼펜 </a></li>
+                        <li><a href="#">수첩/노트 </a></li>
+                        <li><a href="#">메모/포스트잇 </a></li>
+                        <li><a href="#">홀더/화일 </a></li>
+                        <li><a href="#">디자인/제도 </a></li>
+                        <li><a href="#">사무악세사리 </a></li>
+                        <li><a href="#">복사용품/지류 </a></li>
+                        <li><a href="#">원목 사무용품 </a></li>
+                        <li><a href="#">소형 사무기기 </a></li>
+                        <li><a href="#">기타 사무용품 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">전자기기</a></h4>
+                        <li><a href="#">USB메모리 </a></li>
+                        <li><a href="#">보조배터리 </a></li>
+                        <li><a href="#">선풍기 </a></li>
+                        <li><a href="#">블루투스용품 </a></li>
+                        <li><a href="#">가습기/청정기 </a></li>
+                        <li><a href="#">컴퓨터용품 </a></li>
+                        <li><a href="#">휴대폰용품 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">생활/주방</a></h4>
+                        <li><a href="#">우산 </a></li>
+                        <li><a href="#">타월 </a></li>
+                        <li><a href="#">텀블러 </a></li>
+                        <li><a href="#">머그컵 </a></li>
+                        <li><a href="#">티슈/물티슈 </a></li>
+                        <li><a href="#">마스크 </a></li>
+                        <li><a href="#">응급용품 </a></li>
+                        <li><a href="#">위생용품 </a></li>
+                        <li><a href="#">공구 </a></li>
+                        <li><a href="#">시계 </a></li>
+                        <li><a href="#">기타생활 </a></li>
+                        <li><a href="#">기타주방 </a></li>
+                        <li><a href="#">커피/식음료 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">건강/레저</a></h4>
+                        <li><a href="#">골프용품 </a></li>
+                        <li><a href="#">여행 </a></li>
+                        <li><a href="#">달력 </a></li>
+                        <li><a href="#">다이어리 </a></li>
+                        <li><a href="#">자동차용품 </a></li>
+                        <li><a href="#">업소전용품 </a></li>
+                        <li><a href="#">디자인 생수 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">인쇄물</a></h4>
+                        <li><a href="#">상패/트로피 </a></li>
+                        <li><a href="#">상장케이스 </a></li>
+                        <li><a href="#">표찰/안내판 </a></li>
+                        <li><a href="#">교패 </a></li>
+                        <li><a href="#">기타인쇄물 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">계절/의류</a></h4>
+                        <li><a href="#">담요/쿠션 </a></li>
+                        <li><a href="#">손난로 </a></li>
+                        <li><a href="#">부채 </a></li>
+                        <li><a href="#">가방 </a></li>
+                        <li><a href="#">지갑 </a></li>
+                        <li><a href="#">악세사리 </a></li>
+                        <li><a href="#">의류 </a></li>
+                        <li><a href="#">단체티 </a></li>
+                    </ul>
+                    <ul>
+                        <h4><a href="#">기프티콘</a></h4>
+                        <li><a href="#">BHC </a></li>
+                        <li><a href="#">도미노피자 </a></li>
+                        <li><a href="#">네네치킨 </a></li>
+                        <li><a href="#">CU편의점 </a></li>
+                        <li><a href="#">GS25편의점 </a></li>
+                        <li><a href="#">사무악세사리 </a></li>
+                        <li><a href="#">복사용품/지류 </a></li>
+                        <li><a href="#">원목 사무용품 </a></li>
+                        <li><a href="#">소형 사무기기 </a></li>
+                        <li><a href="#">기타 사무용품 </a></li>
+                    </ul>
+                    <ul>
+                        <li><h4><a href="#">선물세트 </a></h4></li>
+                    </ul>
+                    <ul>
+                        <li><h4><a href="#">제작 및 납품 사례</a></h4></li>
+                    </ul>
+                </div>
+                <!--f_menu-->
+                <div class="f_advice">
+                    <div class="f_sns">
+                        <h4>고객상담</h4>
+                        <div class="kakao"><a href="#"><img src="./images/icon/kakao_icon.png" alt="카카오톡"></a></div>
+                        <div><a href="#"><img src="./images/icon/insta_icon.png" alt="인스타그램"></a></div>
+                        <div><a href="#"><img src="./images/icon/naver_form.png" alt="네이버폼"></a></div>
+                    </div>
+                    <div class="f_ad_rihgt">
+                        <div>
+                            <a href="#">
+                                <h4>자주 묻는 질문</h4>
+                                <div><i class="fa-solid fa-question fa-3x"></i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h4>QnA</h4>
+                                <div><i class="fa-solid fa-comments fa-3x"></i></i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h4>공지사항</h4>
+                                <div><i class="fa-regular fa-bell fa-3x"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--f_top_left-->
+            <div class="f_top_right">
+                <div class="f_bank">
+                    <h4>입금계좌</h4>
+                    <div class="f_bank_nhb">
+                        <div>
+                            <img src="./images/icon/NHB_icon.png" alt="농협로고">
+                        </div>
+                        <div class="f_bank_info">
+                            <p>0108352071108</p>
+                            <p>예금주 : 엄준화</p>
+                        </div>
+                    </div>
+                    <div class="f_bank_bnk">
+                        <div>
+                            <img src="./images/icon/bnk_icon.png" alt="농협로고">
+                        </div>
+                        <div class="f_bank_info">
+                            <p>1122101125402</p>
+                            <p>예금주 : 엄준화</p>
+                        </div>
+                    </div>
+                </div>
+                <!--f_bank-->
+                <div class="f_top_right_advice">
+                    <h4>고객상담센터</h4>
+                    <div>
+                        <div class="f_advice_top">
+                            <div class="f_advice_icon">
+                                <i class="fa-solid fa-headset fa-3x"></i>
+                            </div>
+                            <div class="f_advice_num">
+                                <p>053-201-0311</p>
+                                <p>010-9911-0311</p>
+                            </div>
+                        </div>
+                        <div class="f_advice_bottom">
+                            <div><span>FAX : </span>053-351-0409</div>
+                            <div><span>E-Mail : </span>junchi0311@naver.com</div>
+                            <hr>
+                            <p>업무시간 : AM06:00 ~ PM19:00</p>
+                            <p>점심시간 : PM12:00 ~ PM13:00</p>
+                            <h6>업무시간 외에도 <span>전화, 카카오톡</span>상담은 가능합니다.</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--f_top_right_advice-->
+            </div>
+            <!--f_top_right-->
+        </div>
+        <!--f_top-->
+        <nav>
+            <ul class="inner f_mid_lnb">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">1:1상담문의</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">입점문의</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+            </ul>
+        </nav>
+        <!--f_mid_lnb-->
+        <div class="f_bottom inner">
+            <div class="f_bottom_left">
+                <ul>
+                    <li>엄지점빵 대표자 : 엄준화 대구 달서구 달서대로475 5층 엄지점빵</li>
+                    <li>대구 서구 서대구로87, 4층 엄지점빵</li>
+                    <li>사업자등록번호 : 523-02-01184 통신판매업신고 : 2020-대구수성구-0197</li>
+                    <li>고객센터 : 053-201-0311 010-9911-0311 FAX : 엄지점빵 Email : junchi0311@naver.com</li>
+                    <li>개인정보보호책임자 : 엄준화 (junchi0311@naver.com)</li>
+                </ul>
+                <p>엄지점빵의 사전 서면 동의 없이 사이트의 일체의 정보, 콘텐츠 및 UI등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다. Copyright ⓒ 엄지점빵 All rights reserved.</p>
+            </div>
+            <div class="f_bottom_mid">
+                <img src="./images/icon/main_logo.png  " alt="엄지점빵로고 ">
+            </div>
+            <div class="f_bottom_right">
+                <p>에스크로 구매안전서비스</p>
+                <p>고객님은 안전거래를 위해 현금으로 5만원이상 결제시 구매자가 보호를
+                받을 수 있는 구매안전서비스(에스크로)를 이용하실 수 있습니다.</p>
+                <p>보상대상 : 미배송, 반품/환불거부, 쇼핑몰부도</p>
+                <h5><a href="#">서비스가입사실 확인 > </a></h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
